@@ -18,7 +18,7 @@ export default function App() {
           <Route path="/contact" element={<Continent/>}/>
           <Route path="/contact" element={<CurrencyConverter/>}/>
           <Route path="/contact" element={<Articles/>}/> */}
-          <Route exact path="/contact" element={<Contact/>}/>
+          <Route path="/contact" element={<Contact/>}/>
         </Routes>
     </Router> 
 
