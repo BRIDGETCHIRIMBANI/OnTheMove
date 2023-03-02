@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/Home/Home";
 import Contact from "./components/Contacts/Contact";
 import "./index.css";
+import Currency from "./components/Currency/currency";
 
 export default function App() {
   
@@ -16,8 +17,8 @@ export default function App() {
           <Route exact path="/" element={<Home/>}/>
          {/* <Route path="/home" element={<Globe/>}/>
           <Route path="/contact" element={<Continent/>}/>
-          <Route path="/contact" element={<CurrencyConverter/>}/>
           <Route path="/contact" element={<Articles/>}/> */}
+          <Route path="/contact" element={<Currency/>}/>
           <Route path="/contact" element={<Contact/>}/>
         </Routes>
     </Router> 
