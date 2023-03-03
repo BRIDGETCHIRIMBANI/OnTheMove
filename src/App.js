@@ -18,7 +18,7 @@ export default function App() {
          {/* <Route path="/home" element={<Globe/>}/>
           <Route path="/contact" element={<Continent/>}/>
           <Route path="/contact" element={<Articles/>}/> */}
-          <Route path="/contact" element={<Currency/>}/>
+          <Route path="/currency" element={<Currency/>}/>
           <Route path="/contact" element={<Contact/>}/>
         </Routes>
     </Router> 
