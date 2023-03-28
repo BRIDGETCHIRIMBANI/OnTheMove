@@ -4,8 +4,9 @@ import Navbar from "./components/Nav/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/Home/Home";
 import Contact from "./components/Contacts/Contact";
-import "./index.css";
+import LearnMore from "./components/LearnMore/LearnMore"
 import Currency from "./components/Currency/currency";
+import "./index.css";
 
 export default function App() {
   
@@ -15,9 +16,8 @@ export default function App() {
     <Router> 
         <Routes>
           <Route exact path="/" element={<Home/>}/>
-         {/* <Route path="/home" element={<Globe/>}/>
-          <Route path="/contact" element={<Continent/>}/>
-          <Route path="/contact" element={<Articles/>}/> */}
+         {/* {/* <Route path="/home" element={<Country/>}/> */}
+          <Route path="/learnmore" element={<LearnMore/>}/>
           <Route path="/currency" element={<Currency/>}/>
           <Route path="/contact" element={<Contact/>}/>
         </Routes>
