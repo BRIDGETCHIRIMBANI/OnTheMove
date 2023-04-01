@@ -7,6 +7,7 @@ import Contact from "./components/Contacts/Contact";
 import LearnMore from "./components/LearnMore/LearnMore"
 import Currency from "./components/Currency/currency";
 import "./index.css";
+import Country from "./components/Country/Country";
 
 export default function App() {
   
@@ -16,7 +17,7 @@ export default function App() {
     <Router> 
         <Routes>
           <Route exact path="/" element={<Home/>}/>
-         {/* {/* <Route path="/home" element={<Country/>}/> */}
+         <Route path="/country" element={<Country/>}/>
           <Route path="/learnmore" element={<LearnMore/>}/>
           <Route path="/currency" element={<Currency/>}/>
           <Route path="/contact" element={<Contact/>}/>
