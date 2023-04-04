@@ -1,8 +1,7 @@
 export default function Currency () {
-    // return (
-    //     <div></div>
-    // );
-//         <div>
+    return (
+    
+     <div>
 //             <h1>Currency Converter</h1>
 //             <script src="https://www.currencyconverterapi.com/js/convert.js"></script>
 //   <div>
@@ -48,5 +47,5 @@ export default function Currency () {
 //       .catch(error => console.log(error));
 //   }
   
-//     );
+   );
 }

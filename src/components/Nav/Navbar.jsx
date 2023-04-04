@@ -8,8 +8,8 @@ export default function Navbar () {
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="#">Home</a>
-        <a class="nav-link" href="#">Country</a>
+        <a class="nav-link active" aria-current="page" href="/">Home</a>
+        <a class="nav-link" href="/country">Country</a>
         <a class="nav-link" href="#">Currency Converter</a>
         <a class="nav-link" href="#">LearnMore</a>
         <a class="nav-link" href="#">About Us</a>

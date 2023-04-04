@@ -23,9 +23,6 @@ export default function App() {
           <Route path="/contact" element={<Contact/>}/>
         </Routes>
     </Router> 
-
-   <LearnMore/>
-   
      <Footer/> 
     </div>
     

@@ -10,6 +10,26 @@
     padding: 20px;
   }
 
+  .btn.btn-outline-search {
+    color: black;
+    border-color: black;
+    padding: 10px 10px;
+  }
+  
+  .btn.btn-outline-search:hover {
+    color: white;
+    background-color: green;
+    border-color: green;
+  }
+
+  .text{
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    background-image: url("") ;
+    background-color: ;
+  }
+
   /*Country search-box*/
   input[type="text"] {
     margin-right: 30px;
@@ -50,19 +70,6 @@
     /* Set the width to 100% for single column on smaller screens */
     .container{
       flex-direction:column;
-    }
-
-
-    .btn.btn-outline-search {
-      color: black;
-      border-color: black;
-      padding: 10px 10px;
-    }
-    
-    .btn.btn-outline-search:hover {
-      color: white;
-      background-color: green;
-      border-color: green;
     }
     
   }
