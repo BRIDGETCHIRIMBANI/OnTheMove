@@ -24,6 +24,8 @@ export default function App() {
         </Routes>
     </Router> 
 
+   <LearnMore/>
+   
      <Footer/> 
     </div>
     
