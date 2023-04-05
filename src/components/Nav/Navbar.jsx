@@ -10,10 +10,9 @@ export default function Navbar () {
       <div class="navbar-nav">
         <a class="nav-link active" aria-current="page" href="/">Home</a>
         <a class="nav-link" href="/country">Country</a>
-        <a class="nav-link" href="#">Currency Converter</a>
-        <a class="nav-link" href="#">LearnMore</a>
-        <a class="nav-link" href="#">About Us</a>
-        <a class="nav-link" href="#">Contact Us</a>
+        <a class="nav-link" href="./LearnMore">LearnMore</a>
+        <a class="nav-link" href="About Us">About Us</a>
+        <a class="nav-link" href="./Contact">Contact Us</a>
 
 
       </div>
@@ -21,27 +20,6 @@ export default function Navbar () {
   </div>
 </nav>
         
-
-
-    //     <div>
-    //         <section class="top-nav">
-    //   <div>
-    //     OnTheMove
-    //   </div>
-    //   <input id="menu-toggle" type="checkbox" />
-    //   <label class='menu-button-container' for="menu-toggle">
-    //   <div class='menu-button'></div>
-    // </label>
-    //   <ul class="menu">
-    //     <li>Home</li>
-    //     <li>Globe</li>
-    //     <li>By Continent</li>
-    //     <li>Articles</li>
-    //     <li>Contact Us</li>
-    //   </ul>
-    // </section>
-    //     </div>
-
 
     );
 }

@@ -2,31 +2,31 @@
 export default function LearnMore() {
   return (
  
- <div className="container">
-      <div className="box"> 
+ <div className="learn-more-container">
+      <div className="box">
       <p>2023 African Elections</p>
-  <a href="https://example.com">
+  <a href="https://africanarguments.org/2023/03/africa-elections-all-upcoming-votes/">
     <button type="button" className="btn btn-outline-search">Read More</button>       
   </a>
 </div>
   
       <div className="box"> 
-      <p>What is the Cost of Living</p>
-      <a href="https://example.com">
+      <p>World Facts</p>
+      <a href="https://worldfacts.us/">
       <button type="button" class="btn btn-outline-search">Know More</button> 
         </a>
       </div>
 
       <div className="box"> 
       <p>All About FIFA</p>
-      <a href="https://example.com">
+      <a href="https://www.fifa.com/about-fifa">
       <button type="button" class="btn btn-outline-search">Read More</button> 
         </a>
       </div>
 
       <div className="box"> 
       <p>All About AI</p>
-      <a href="https://example.com">
+      <a href="https://www.allabtai.com/">
       <button type="button" class="btn btn-outline-search">Learn More</button> 
         </a>
 
@@ -36,9 +36,3 @@ export default function LearnMore() {
   )
 }
   
-   {/*<div class="row">
-  <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-  <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-  <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-  </div>*/}
-
