@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-
 export default function Country () {
 
     //define state variables using the UseState hook. It's intial value is an empty array.//
@@ -117,7 +116,7 @@ export default function Country () {
            <> 
               
            <div class="country-box">
-          <h2 class="text-center">Excited for some World Knowledge?!! Search Below.</h2>
+           <h2 class="text-center">Excited for some World Knowledge?!! Search Below.</h2>
           < form onSubmit = {handleSearchButtonClick}> 
           <div class="search-input">
            <input list="cities" type="text" class="form-control form-control-sm border-dark" placeholder="Search City 1" id="capital"></input>
@@ -146,13 +145,19 @@ export default function Country () {
           <li>capital:{capital?.capital}</li>
           <li>population:{capital?.population}</li>
           <li>language:{capital?.language}</li>
-          <a href="./Map">Show On Map</a>
+          <a
+           href={`/Map?lat=${capital?.latlng[0]}&lng=${capital?.latlng[1]}`}
+           onClick={() => handlePlaceChange(newPlace)}       
+           >
+           Show On Map
+            </a>
 
          </ul>
              </li>
                </ul>
              ) : null}
             </div> 
+            </div>
 
             <div className="container my-4 mx-auto width-75 p-4 rounded" style={{backgroundColor: "white"}}>
          <h2>Cost of Living Comparison</h2> 
@@ -192,8 +197,11 @@ export default function Country () {
        </div> 
   
               </div>
-              </div>
+        
             </>
+
+
+
             );
  
          }
