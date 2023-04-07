@@ -9,6 +9,7 @@ import "./index.css";
 import Country from "./components/Country/Country";
 import About from "./components/AboutUs/about";
 import Map from "./components/Map/Map";
+import Poster from "./components/Country/Poster";
 
 export default function App() {
   
@@ -23,6 +24,7 @@ export default function App() {
           <Route path="/contact" element={<Contact/>}/>
           <Route path="/about" element={<About/>}/>
           <Route path="/map" element = {<Map/>}/>
+          <Route path="/poster" element = {<Poster/>}/>
         </Routes>
     </Router> 
      <Footer/> 

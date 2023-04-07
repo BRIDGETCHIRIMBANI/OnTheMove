@@ -4,7 +4,7 @@ export default function AboutUs() {
       <section id="about-section">
   <div className="about-container-center">
     <div className="row">
-      <div className="col-lg-6 align-items-center justify-content-center d-flex mb-5 mb-lg-0">
+      <div className="col-lg-6 align-items-center justify-content-center ">
         <div className="blockabout">
           <div className="blockabout-inner text-center text-sm-start">
             <div className="title-bold pb-2 mb-3">

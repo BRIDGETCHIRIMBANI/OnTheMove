@@ -128,7 +128,7 @@ export default function Country () {
            <button type="submit" class="btn btn-outline-search">Search</button>
          </div>
          </div>
-
+        
         <div className="container my-4 mx-auto width-75 p-4 rounded" style={{backgroundColor: "white"}}>
             <h2>Cost of Living Comparison</h2> 
            {/* This action happens when the form is submitted.

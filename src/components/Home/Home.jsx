@@ -20,9 +20,11 @@ export default function Home () {
             <h3>Your go to place to ease your heart when traveling by providing you with all the nitty gritties of the World</h3>
             </div>
         </div>
- 
+   
+        <div className="about-container-center">
         <AboutUs/>
-
+        </div>
+        
         <h1 style={{fontWeight: 'bold', textAlign: "center", margin: '0 auto 20px'}}>Learn More</h1>
         <div className="learn-more-container"> 
             <LearnMore/>
