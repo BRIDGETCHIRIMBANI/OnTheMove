@@ -1,3 +1,32 @@
+import React from 'react';
+
+// const AboutUs = () => {
+//   return (
+//     <div className="about-container">
+//       <div className="about-image">
+//         <img src={Shell} alt="Shell" />
+//       </div>
+//       <div className="about-text">
+//         <h1>About Me</h1>
+//         <p>
+//           Welcome to my About Me page! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum
+//           libero eget orci gravida, et aliquam ipsum pharetra. Nulla facilisi. Morbi eu dui fermentum, fermentum
+//           risus et, fringilla enim. Sed maximus augue et tempor. Sed tempor fermentum orci, sit amet pulvinar
+//           metus facilisis ac. Sed at lectus augue.
+//         </p>
+//         <p>
+//           Sed lacinia augue vitae commodo tempor. Morbi congue malesuada sem at ullamcorper. Fusce consequat
+//           nulla eu massa maximus efficitur. Vivamus a mauris odio. Vivamus vehicula urna at magna suscipit,
+//           a lacinia justo placerat. Nam faucibus odio a vehicula consequat. Quisque vel dolor vitae tellus
+//           efficitur convallis. Cras vel dapibus urna.
+//         </p>
+//       </div>
+//     </div>
+//   );
+// }
+
+
+
 
 export default function AboutUs() {
     return (
@@ -23,4 +52,6 @@ export default function AboutUs() {
 
     );
   }
+
+
   

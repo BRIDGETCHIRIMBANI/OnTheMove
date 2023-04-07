@@ -23,7 +23,7 @@
     color:azure;
   }
 
-  about-section {
+  /* about-section {
     background: rgba(32, 33, 36, 0.1);
     position: center;
 }
@@ -51,6 +51,43 @@
     font-size: 15px;
     text-align: center;
     transition: all 0.3s;
+} */
+
+/* Container for image and text */
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Image container */
+.about-image {
+  flex: 1;
+  padding: 30px;
+}
+
+/* Image styling */
+.about-image img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Text container */
+.about-text {
+  flex: 1;
+  padding: 30px;
+}
+
+/* Text styling */
+.about-text h1 {
+  font-size: 28px;
+  margin-top: 0;
+}
+
+.about-text p {
+  font-size: 18px;
 }
 
   .btn.btn-outline-search {

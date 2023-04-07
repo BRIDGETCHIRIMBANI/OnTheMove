@@ -8,6 +8,7 @@ export default function Country () {
     const [countries, setCountries]=useState([]);
     const [cost1, setCost1] = useState({});
     const [cost2, setCost2] = useState({});
+    const [capital, setCapital] = useState();
 
     //HandleSubmit is a function that takes an event as an argument(It is triggered by an event such as when a user clicks on a button)
     const handleSubmit = async (event) => {
@@ -21,32 +22,30 @@ export default function Country () {
       // setPrices(await getPrices());
       console.log(cost1);
       console.log(cost2);
-
     }
-         document.addEventListener('DOMContentLoaded', function() {
-         document.getElementById('city1').addEventListener('change',handleCity1Change);
-         document.getElementById('searchButton').addEventListener('click', handleSearchButtonClick);
-      });
 
-        const handleSearchButtonClick = async () => {
-        const city = document.getElementById('city1').value; // Get the selected city from the input field
+    const handleSearchButtonClick = async (event) => {
+      event.preventDefault()
       
+      const city = document.getElementById('capital').value.split('-')[0];    
       try {
-        const data = await getCities(); // Call the getCities function to get the data
-        // Extract the country facts based on the selected city
-        const countryFacts = data.find(item => item.city === city);
-        // Display the country facts in the desired format
-        if (countryFacts) {
-          const countryInfo = `Country: ${countryFacts.country}\nCapital: ${countryFacts.capital}\nAlternate Spellings: ${countryFacts.altSpellings.join(', ')}\nRegion: ${countryFacts.region}\nPopulation: ${countryFacts.population}\nFlag: ${countryFacts.flag}`;
-          alert(countryInfo);
-        } else {
-          alert('Country facts not found for the selected city.');
-        }
-      } catch (error) {
-        console.error('Error:', error);
-      }
-    };
-    
+      const data = await getCities(); 
+      const countryFacts = data.find(item => item.capital[0] === city);
+      //const capital =  (event.target.value);
+      console.log("country facts found: ", countryFacts, "capital", city);
+      
+      setCapital(countryFacts);
+      // if (countryFacts) {
+      //   const countryInfo = `Country: ${countryFacts.country}\nCapital: ${countryFacts.capital}\nAlternate Spellings: ${countryFacts.altSpellings.join(', ')}\nRegion: ${countryFacts.region}\nPopulation: ${countryFacts.population}\nFlag: ${countryFacts.flag}`;
+      //   //alert(countryInfo);
+      // } else {
+      //   alert('Country facts not found for the selected city.');
+      // }
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  };
+  
     const getPrices = async (city, country) => {
         const options = {
             method: 'GET',
@@ -56,8 +55,8 @@ export default function Country () {
             }
         };
         
-        await fetch(`cities.json/prices?city_name=${city}&country_name=${country}`, options)
-	    //  await fetch(`https://cost-of-living-and-prices.p.rapidapi.com/prices?city_name=${city}&country_name=${country}`, options)
+      //  await fetch(`cities.json/prices?city_name=${city}&country_name=${country}`, options)
+	      await fetch(`https://cost-of-living-and-prices.p.rapidapi.com/prices?city_name=${city}&country_name=${country}`, options)
         .then(response => {
         return response.json()
       })
@@ -76,8 +75,8 @@ export default function Country () {
           }
       };
       
-     await fetch(`prices.json/prices?city_name=${city}&country_name=${country}`, options)
-      //await fetch(`https://cost-of-living-and-prices.p.rapidapi.com/prices?city_name=${city}&country_name=${country}`, options)
+     //await fetch(`prices.json/prices?city_name=${city}&country_name=${country}`, options)
+      await fetch(`https://cost-of-living-and-prices.p.rapidapi.com/prices?city_name=${city}&country_name=${country}`, options)
      .then(response => {
       return response.json()
     })
@@ -118,55 +117,113 @@ export default function Country () {
         fetchCountries();
       }, []); 
       
+      
     // This is the user-interface that the user will interact with. 
-    return (
-      <>
-      <div class="country-box">
-          <h2 class="text-center">Excited for some World Knowledge?!! Search Below.</h2>
-          <div class="search-input">
-           <input list="cities" type="text" class="form-control form-control-sm border-dark" placeholder="Search City 1" id="city1"></input>
-           <button type="submit" class="btn btn-outline-search">Search</button>
-         </div>
-         </div>
-        
+      return ( 
+           <> 
         <div className="container my-4 mx-auto width-75 p-4 rounded" style={{backgroundColor: "white"}}>
-            <h2>Cost of Living Comparison</h2> 
-           {/* This action happens when the form is submitted.
+         <h2>Cost of Living Comparison</h2> 
+          {/* This action happens when the form is submitted.
            When the user enters info in the input field and clicks the Compare button, the 'handleSubmit function is called.*/}
-           <form onSubmit={handleSubmit} > 
-           <div className="row mb-3">
-           <div class="col-md 6"> 
-           <input list="cities" type="text" className="form-control border-dark" placeholder="Search City 1" id="city1" onChange={handleCity1Change}></input>
-            </div>
-            <div class="col-md 6"> 
-            <input list="cities" type="text" className="form-control border-dark" placeholder="Search City 2" id="city2" onChange={handleCity2Change}></input>
-            </div>
-            </div>
-             <button type="submit" class="btn btn-outline-search">Search</button>  
-        </form>
-          <table>
-          <tr>
-            <th>Item name</th>
-            <th>Price 1</th>
-            <th>Price 2</th>
-          </tr>
-           {cost1.prices && cost1.prices.map((item, index) => {
-           return <tr key={index}>
-            <td>{item.item_name}</td>
-            <td>{item?.usd?.avg}</td>
-            <td>{cost2?.prices?.filter(c2 => c2.item_name === item.item_name)[0]?.usd?.avg}</td>
-          </tr>
+         <form onSubmit={handleSubmit} > 
+         <div className="row mb-3">
+         <div class="col-md 6"> 
+        <input list="cities" type="text" className="form-control border-dark" placeholder="Search City 1" id="city1" onChange={handleCity1Change}></input>
+         </div>
+          <div class="col-md 6"> 
+          <input list="cities" type="text" className="form-control border-dark" placeholder="Search City 2" id="city2" onChange={handleCity2Change}></input>
+          </div>
+          </div>
+         <button type="submit" class="btn btn-outline-search">Search</button>  
+         </form>
+       <table>
+       <tr>
+        <th>Item name</th>
+        <th>Price 1</th>
+        <th>Price 2</th>
+      </tr>
+       {cost1.prices && cost1.prices.map((item, index) => {
+       return <tr key={index}>
+        <td>{item.item_name}</td>
+        <td>{item?.usd?.avg}</td>
+        <td>{cost2?.prices?.filter(c2 => c2.item_name === item.item_name)[0]?.usd?.avg}</td>
+      </tr>
+    })}
+     </table>
+
+       <datalist id="cities">
+        {countries && countries.map((country, index) => {
+            return (<option key={index} value={country.capital[0]+'-'+country.name.common}/>);
         })}
-         </table>
+      </datalist>
+       </div> 
+        
+           <div class="country-box">
+          <h2 class="text-center">Excited for some World Knowledge?!! Search Below.</h2>
+          < form onSubmit = {handleSearchButtonClick}> 
+          <div class="search-input">
+           <input list="cities" type="text" class="form-control form-control-sm border-dark" placeholder="Search City 1" id="capital"></input>
+           <button type="submit" class="btn btn-outline-search" id="searchButton">Search</button>
+           </div>
+           </form>
+            </div>
+           <div class="accordion" id="accordionExample"></div>
+           <div class="card">
+           <div class="card-header" id="headingOne">
+           <h2 class="mb-0">
+           <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+           County Facts!
+            </button>
+          </h2>
+           </div> 
+           <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+           <div className="card-body">
+           {capital ? (
+           <ul>
+       <li>
+        <strong>Country Info</strong>
+        <ul>
+          <img src={capital?.flag} alt={'${capital} flag'} />
+          <li>country: {capital?.name.common}</li>
+          <li>capital:{capital?.capital}</li>
+          <li>population:{capital?.population}</li>
+          <li>language:{capital?.language}</li>
+          <a href="./Map">Show On Map</a>
 
-           <datalist id="cities">
-            {countries && countries.map((country, index) => {
-                return (<option key={index} value={country.capital[0]+'-'+country.name.common}/>);
-            })}
-          </datalist>
+         </ul>
+             </li>
+               </ul>
+             ) : null}
+            </div> 
+              </div>
+              </div>
+            </>
+            );
+ 
+         }
+               
+      {/* {capital ?<p>{JSON.stringify(capital)}</p> : null}  */} 
+        {/* {capital ? (
+         <ul>
+         {Object.entries(capital).map(([key, value]) => (
+        <li key={key}>
+          <strong>{key}: </strong>
+          {typeof value === 'object' ? (
+            <ul>
+              {Object.entries(value).map(([nestedKey, nestedValue]) => (
+                <li key={nestedKey}>
+                  <strong>{nestedKey}: </strong>
+                  {nestedValue}
+                </li>
+              ))}
+            </ul>
+          ) : (
+            value
+          )}
+        </li>
+      ))}
+    </ul>
+  ) : null}
+</div> */}
 
-       </div>
-       </>
-    );
-
-          }
+           
