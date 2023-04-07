@@ -102,9 +102,9 @@
    }
   .text-center {
     text-align: center;
-    color: white;
-    text-decoration: wavy;
-    font-style: bold;
+    color: black;
+    text-decoration:solid;
+    font-style: dark;
   }
   
   .form-control {

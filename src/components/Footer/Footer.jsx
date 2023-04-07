@@ -23,7 +23,7 @@ export default function Footer () {
 
       <div className="col-md-2">
           <h6 class="text-uppercase font-weight-bold">
-          <a href="./about" class="text-white">About Us</a>
+          <a href="./Map" class="text-white">Map</a>
           </h6>
       </div>
 

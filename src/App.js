@@ -11,9 +11,10 @@ import AboutUs from "./components/AboutUs/AboutUs";
 import Map from "./components/Map/Map";
 
 
-export default function App() {
+export  default function App() {
   
   return (
+    <>
     <div>
       <Navbar/>
     <Router> 
@@ -27,8 +28,12 @@ export default function App() {
         </Routes>
     </Router> 
      <Footer/> 
-    </div>
-    
+     </div>
+     <div>
+
+     </div>
+     </>
   );
-}
+
+  }
 

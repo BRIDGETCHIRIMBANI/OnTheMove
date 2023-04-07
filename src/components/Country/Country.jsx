@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+
 export default function Country () {
 
     //define state variables using the UseState hook. It's intial value is an empty array.//
@@ -38,6 +39,7 @@ export default function Country () {
       console.error('Error:', error);
     }
   };
+
   
     const getPrices = async (city, country) => {
         const options = {
@@ -93,7 +95,7 @@ export default function Country () {
           const data = await response.json();
           return data;
       };
-
+     
       function handleCity1Change(event) {
         setCity1(event.target.value);
       }
@@ -110,11 +112,10 @@ export default function Country () {
         fetchCountries();
       }, []); 
       
-      
     // This is the user-interface that the user will interact with. 
       return ( 
            <> 
-              
+          
            <div class="country-box">
            <h2 class="text-center">Excited for some World Knowledge?!! Search Below.</h2>
           < form onSubmit = {handleSearchButtonClick}> 
@@ -145,13 +146,7 @@ export default function Country () {
           <li>capital:{capital?.capital}</li>
           <li>population:{capital?.population}</li>
           <li>language:{capital?.language}</li>
-          <a
-           href={`/Map?lat=${capital?.latlng[0]}&lng=${capital?.latlng[1]}`}
-           onClick={() => handlePlaceChange(newPlace)}       
-           >
-           Show On Map
-            </a>
-
+          <a href={`/Map?lat=${capital?.latlng[0]}&lng=${capital?.latlng[1]}`} onClick={() => (capital)}>Show On Map</a>
          </ul>
              </li>
                </ul>
@@ -200,10 +195,5 @@ export default function Country () {
         
             </>
 
-
-
             );
- 
-         }
-               
-  
+      }

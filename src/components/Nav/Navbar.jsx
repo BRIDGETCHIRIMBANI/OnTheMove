@@ -10,6 +10,7 @@ export default function Navbar () {
       <div class="navbar-nav">
         <a class="nav-link active" aria-current="page" href="/">Home</a>
         <a class="nav-link" href="/country">Country</a>
+        <a class="nav-link" href="/Map">Google Maps</a>
         <a class="nav-link" href="./Contact">Contact Us</a>
 
 
