@@ -1,0 +1,890 @@
+{
+    "city_id": 1812,
+    "city_name": "Bratislava",
+    "state_code": null,
+    "country_name": "Slovakia",
+    "exchange_rate": {
+      "EUR": 0.9641249120236018,
+      "AUD": 1.4970401365200876,
+      "USD": 1,
+      "CAD": 1.3441251048485843,
+      "CNY": 7.205101184909517,
+      "CZK": 23.476015464563588,
+      "DKK": 7.170099594103413,
+      "GBP": 0.8286701825088458,
+      "HKD": 7.820719044359387,
+      "JPY": 138.2164846077458,
+      "NZD": 1.6113843869611748,
+      "NOK": 9.949329451123688,
+      "RUB": 60.814997927131444,
+      "KRW": 1341.0302098899933,
+      "CHF": 0.9457197674530712,
+      "UAH": 37.08369664773768,
+      "SEK": 10.458629400025067
+    },
+    "exchange_rates_updated": {
+      "date": "2022-11-28",
+      "timestamp": 1669618803
+    },
+    "prices": [
+      {
+        "good_id": 1,
+        "item_name": "Price per square meter to Buy Apartment Outside of City Center",
+        "category_id": 1,
+        "category_name": "Buy Apartment",
+        "min": 2270.25,
+        "avg": 2749.07,
+        "max": 3227.89,
+        "usd": {
+          "min": "2354.73",
+          "avg": "2851.36",
+          "max": "3348.00"
+        },
+        "measure": "money",
+        "currency_code": "EUR"
+      },
+      {
+        "good_id": 2,
+        "item_name": "Price per square meter to Buy Apartment in City Center",
+        "category_id": 1,
+        "category_name": "Buy Apartment",
+        "min": 3095.79,
+        "avg": 3702.57,
+        "max": 4309.35,
+        "usd": {
+          "min": "3210.98",
+          "avg": "3840.34",
+          "max": "4469.70"
+        },
+        "measure": "money",
+        "currency_code": "EUR"
+      },
+      {
+        "good_id": 3,
+        "item_name": "International Primary School, Yearly for 1 Child",
+        "category_id": 2,
+        "category_name": "Childcare",
+        "min": 6191.59,
+        "avg": 10613.02,
+        "max": 15478.96,
+        "usd": {
+          "min": "6421.98",
+          "avg": "11007.93",
+          "max": "16054.93"
+        },
+        "measure": "money",
+        "currency_code": "EUR"
+      },
+      {
+        "good_id": 4,
+        "item_name": "Private Preschool or Kindergarten, Monthly for 1 Child",
+        "category_id": 2,
+        "category_name": "Childcare",
+        "min": 361.17,
+        "avg": 451.47,
+        "max": 541.77,
+        "usd": {
+          "min": "374.61",
+          "avg": "468.27",
+          "max": "561.93"
+        },
+        "measure": "money",
+        "currency_code": "EUR"
+      },
+      {
+        "good_id": 5,
+        "item_name": "Pair of Jeans in a Chain Store Like George, H&M, Zara, etc.",
+        "category_id": 3,
+        "category_name": "Clothing And Shoes",
+        "min": 20.64,
+        "avg": 61.57,
+        "max": 102.5,
+        "usd": {
+          "min": "21.41",
+          "avg": "63.86",
+          "max": "106.31"
+        },
+        "measure": "money",
+        "currency_code": "EUR"
+      },
+      {
+        "good_id": 6,
+        "item_name": "Pair of Leather Business Shoes",
+        "category_id": 3,
+        "category_name": "Clothing And Shoes",
+        "min": 51.59,
+        "avg": 83.76,
+        "max": 115.93,
+        "usd": {
+          "min": "53.51",
+          "avg": "86.88",
+          "max": "120.24"
+        },
+        "measure": "money",
+        "currency_code": "EUR"
+      },
+      {
+        "good_id": 7,
+        "item_name": "Pair of Running Shoes, Mid-Range Price",
+        "category_id": 3,
+        "category_name": "Clothing And Shoes",
+        "min": 41.28,
+        "avg": 67.75,
+        "max": 103.19,
+        "usd": {
+          "min": "42.82",
+          "avg": "70.27",
+          "max": "107.03"
+        },
+        "measure": "money",
+        "currency_code": "EUR"
+      },
+      {
+        "good_id": 9,
+        "item_name": "Apples, 1 kg",
+        "category_id": 4,
+        "category_name": "Markets",
+        "min": 0.83,
+        "avg": 1.46,
+        "max": 2.09,
+        "usd": {
+          "min": "0.86",
+          "avg": "1.51",
+          "max": "2.17"
+        },
+        "measure": "money",
+        "currency_code": "EUR"
+      },
+      {
+        "good_id": 10,
+        "item_name": "Banana, 1 kg",
+        "category_id": 4,
+        "category_name": "Markets",
+        "min": 1.13,
+        "avg": 1.59,
+        "max": 3.1,
+        "usd": {
+          "min": "1.17",
+          "avg": "1.65",
+          "max": "3.22"
+        },
+        "measure": "money",
+        "currency_code": "EUR"
+      },
+      {
+        "good_id": 11,
+        "item_name": "Beef Round or Equivalent Back Leg Red Meat, 1 kg ",
+        "category_id": 4,
+        "category_name": "Markets",
+        "min": 5.16,
+        "avg": 8.71,
+        "max": 12.39,
+        "usd": {
+          "min": "5.35",
+          "avg": "9.03",
+          "max": "12.85"
+        },
+        "measure": "money",
+        "currency_code": "EUR"
+      },
+      {
+        "good_id": 12,
+        "item_name": "Bottle of Wine, Mid-Range Price",
+        "category_id": 4,
+        "category_name": "Markets",
+        "min": 3.1,
+        "avg": 5.16,
+        "max": 7.22,
+        "usd": {
+          "min": "3.22",
+          "avg": "5.35",
+          "max": "7.49"
+        },
+        "measure": "money",
+        "currency_code": "EUR"
+      },
+      {
+        "good_id": 13,
+        "item_name": "Chicken Breasts, Boneless and Skinless, 1 kg",
+        "category_id": 4,
+        "category_name": "Markets",
+        "min": 3.1,
+        "avg": 5.38,
+        "max": 7.66,
+        "usd": {
+          "min": "3.22",
+          "avg": "5.58",
+          "max": "7.95"
+        },
+        "measure": "money",
+        "currency_code": "EUR"
+      },
+      {
+        "good_id": 14,
+        "item_name": "Domestic Beer, 0.5 liter Bottle",
+        "category_id": 4,
+        "category_name": "Markets",
+        "min": 0.52,
+        "avg": 0.82,
+        "max": 1.55,
+        "usd": {
+          "min": "0.54",
+          "avg": "0.85",
+          "max": "1.61"
+        },
+        "measure": "money",
+        "currency_code": "EUR"
+      },
+      {
+        "good_id": 15,
+        "item_name": "Eggs, 12 pack",
+        "category_id": 4,
+        "category_name": "Markets",
+        "min": 1.36,
+        "avg": 1.93,
+        "max": 2.58,
+        "usd": {
+          "min": "1.41",
+          "avg": "2.00",
+          "max": "2.68"
+        },
+        "measure": "money",
+        "currency_code": "EUR"
+      },
+      {
+        "good_id": 17,
+        "item_name": "Lettuce, 1 head",
+        "category_id": 4,
+        "category_name": "Markets",
+        "min": 0.61,
+        "avg": 0.99,
+        "max": 1.37,
+        "usd": {
+          "min": "0.63",
+          "avg": "1.03",
+          "max": "1.42"
+        },
+        "measure": "money",
+        "currency_code": "EUR"
+      },
+      {
+        "good_id": 18,
+        "item_name": "Loaf of Fresh White Bread, 0.5 kg",
+        "category_id": 4,
+        "category_name": "Markets",
+        "min": 0.52,
+        "avg": 1.05,
+        "max": 2.07,
+        "usd": {
+          "min": "0.54",
+          "avg": "1.09",
+          "max": "2.15"
+        },
+        "measure": "money",
+        "currency_code": "EUR"
+      },
+      {
+        "good_id": 19,
+        "item_name": "Local Cheese, 1 kg",
+        "category_id": 4,
+        "category_name": "Markets",
+        "min": 4.64,
+        "avg": 7.8,
+        "max": 12.9,
+        "usd": {
+          "min": "4.81",
+          "avg": "8.09",
+          "max": "13.38"
+        },
+        "measure": "money",
+        "currency_code": "EUR"
+      },
+      {
+        "good_id": 20,
+        "item_name": "Milk, Regular,1 liter",
+        "category_id": 4,
+        "category_name": "Markets",
+        "min": 0.62,
+        "avg": 0.81,
+        "max": 1.03,
+        "usd": {
+          "min": "0.64",
+          "avg": "0.84",
+          "max": "1.07"
+        },
+        "measure": "money",
+        "currency_code": "EUR"
+      },
+      {
+        "good_id": 21,
+        "item_name": "Onion, 1 kg",
+        "category_id": 4,
+        "category_name": "Markets",
+        "min": 0.52,
+        "avg": 1.01,
+        "max": 1.85,
+        "usd": {
+          "min": "0.54",
+          "avg": "1.05",
+          "max": "1.92"
+        },
+        "measure": "money",
+        "currency_code": "EUR"
+      },
+      {
+        "good_id": 22,
+        "item_name": "Oranges, 1 kg",
+        "category_id": 4,
+        "category_name": "Markets",
+        "min": 1.03,
+        "avg": 1.56,
+        "max": 2.09,
+        "usd": {
+          "min": "1.07",
+          "avg": "1.62",
+          "max": "2.17"
+        },
+        "measure": "money",
+        "currency_code": "EUR"
+      },
+      {
+        "good_id": 23,
+        "item_name": "Pack of Cigarettes",
+        "category_id": 4,
+        "category_name": "Markets",
+        "min": 3.62,
+        "avg": 4.03,
+        "max": 4.64,
+        "usd": {
+          "min": "3.75",
+          "avg": "4.18",
+          "max": "4.81"
+        },
+        "measure": "money",
+        "currency_code": "EUR"
+      },
+      {
+        "good_id": 24,
+        "item_name": "Potato, 1 kg",
+        "category_id": 4,
+        "category_name": "Markets",
+        "min": 0.36,
+        "avg": 0.91,
+        "max": 1.85,
+        "usd": {
+          "min": "0.37",
+          "avg": "0.94",
+          "max": "1.92"
+        },
+        "measure": "money",
+        "currency_code": "EUR"
+      },
+      {
+        "good_id": 25,
+        "item_name": "White Rice, 1 kg",
+        "category_id": 4,
+        "category_name": "Markets",
+        "min": 0.83,
+        "avg": 1.24,
+        "max": 1.65,
+        "usd": {
+          "min": "0.86",
+          "avg": "1.29",
+          "max": "1.71"
+        },
+        "measure": "money",
+        "currency_code": "EUR"
+      },
+      {
+        "good_id": 26,
+        "item_name": "Tomato, 1 kg",
+        "category_id": 4,
+        "category_name": "Markets",
+        "min": 1.45,
+        "avg": 2.44,
+        "max": 4.13,
+        "usd": {
+          "min": "1.50",
+          "avg": "2.53",
+          "max": "4.28"
+        },
+        "measure": "money",
+        "currency_code": "EUR"
+      },
+      {
+        "good_id": 27,
+        "item_name": "Water, 1.5 liter Bottle",
+        "category_id": 4,
+        "category_name": "Markets",
+        "min": 0.31,
+        "avg": 0.6,
+        "max": 0.93,
+        "usd": {
+          "min": "0.32",
+          "avg": "0.62",
+          "max": "0.96"
+        },
+        "measure": "money",
+        "currency_code": "EUR"
+      },
+      {
+        "good_id": 28,
+        "item_name": "One bedroom apartment outside of city centre",
+        "category_id": 5,
+        "category_name": "Rent Per Month",
+        "min": 412.78,
+        "avg": 477.57,
+        "max": 619.16,
+        "usd": {
+          "min": "428.14",
+          "avg": "495.34",
+          "max": "642.20"
+        },
+        "measure": "money",
+        "currency_code": "EUR"
+      },
+      {
+        "good_id": 29,
+        "item_name": "One bedroom apartment in city centre",
+        "category_id": 5,
+        "category_name": "Rent Per Month",
+        "min": 515.97,
+        "avg": 656.53,
+        "max": 825.54,
+        "usd": {
+          "min": "535.17",
+          "avg": "680.96",
+          "max": "856.26"
+        },
+        "measure": "money",
+        "currency_code": "EUR"
+      },
+      {
+        "good_id": 30,
+        "item_name": "Three bedroom apartment outside of city centre",
+        "category_id": 5,
+        "category_name": "Rent Per Month",
+        "min": 670.76,
+        "avg": 820.39,
+        "max": 1031.93,
+        "usd": {
+          "min": "695.72",
+          "avg": "850.92",
+          "max": "1070.33"
+        },
+        "measure": "money",
+        "currency_code": "EUR"
+      },
+      {
+        "good_id": 31,
+        "item_name": "Three bedroom apartment in city centre",
+        "category_id": 5,
+        "category_name": "Rent Per Month",
+        "min": 877.14,
+        "avg": 1088.69,
+        "max": 1444.71,
+        "usd": {
+          "min": "909.78",
+          "avg": "1129.20",
+          "max": "1498.47"
+        },
+        "measure": "money",
+        "currency_code": "EUR"
+      },
+      {
+        "good_id": 32,
+        "item_name": "Cappuccino",
+        "category_id": 6,
+        "category_name": "Restaurants",
+        "min": 1.03,
+        "avg": 2.19,
+        "max": 3.35,
+        "usd": {
+          "min": "1.07",
+          "avg": "2.27",
+          "max": "3.47"
+        },
+        "measure": "money",
+        "currency_code": "EUR"
+      },
+      {
+        "good_id": 33,
+        "item_name": "Coca-Cola, 0.33 liter Bottle",
+        "category_id": 6,
+        "category_name": "Restaurants",
+        "min": 1.24,
+        "avg": 1.73,
+        "max": 2.22,
+        "usd": {
+          "min": "1.29",
+          "avg": "1.79",
+          "max": "2.30"
+        },
+        "measure": "money",
+        "currency_code": "EUR"
+      },
+      {
+        "good_id": 34,
+        "item_name": "Domestic Beer, 0.5 liter Draught",
+        "category_id": 6,
+        "category_name": "Restaurants",
+        "min": 1.03,
+        "avg": 2.07,
+        "max": 3.11,
+        "usd": {
+          "min": "1.07",
+          "avg": "2.15",
+          "max": "3.23"
+        },
+        "measure": "money",
+        "currency_code": "EUR"
+      },
+      {
+        "good_id": 35,
+        "item_name": "Imported Beer, 0.33 liter Bottle",
+        "category_id": 6,
+        "category_name": "Restaurants",
+        "min": 1.85,
+        "avg": 2.58,
+        "max": 3.62,
+        "usd": {
+          "min": "1.92",
+          "avg": "2.68",
+          "max": "3.75"
+        },
+        "measure": "money",
+        "currency_code": "EUR"
+      },
+      {
+        "good_id": 36,
+        "item_name": "McMeal at McDonalds or Alternative Combo Meal",
+        "category_id": 6,
+        "category_name": "Restaurants",
+        "min": 5.67,
+        "avg": 6.19,
+        "max": 7.22,
+        "usd": {
+          "min": "5.88",
+          "avg": "6.42",
+          "max": "7.49"
+        },
+        "measure": "money",
+        "currency_code": "EUR"
+      },
+      {
+        "good_id": 37,
+        "item_name": "Meal for 2 People, Mid-range Restaurant, Three-course",
+        "category_id": 6,
+        "category_name": "Restaurants",
+        "min": 30.96,
+        "avg": 41.28,
+        "max": 61.91,
+        "usd": {
+          "min": "32.11",
+          "avg": "42.82",
+          "max": "64.21"
+        },
+        "measure": "money",
+        "currency_code": "EUR"
+      },
+      {
+        "good_id": 38,
+        "item_name": "Meal in Inexpensive Restaurant",
+        "category_id": 6,
+        "category_name": "Restaurants",
+        "min": 4.64,
+        "avg": 6.19,
+        "max": 10.32,
+        "usd": {
+          "min": "4.81",
+          "avg": "6.42",
+          "max": "10.70"
+        },
+        "measure": "money",
+        "currency_code": "EUR"
+      },
+      {
+        "good_id": 40,
+        "item_name": "Average Monthly Net Salary, After Tax",
+        "category_id": 7,
+        "category_name": "Salaries And Financing",
+        "min": 1054.3,
+        "avg": 1171.45,
+        "max": 1288.6,
+        "usd": {
+          "min": "1093.53",
+          "avg": "1215.04",
+          "max": "1336.55"
+        },
+        "measure": "money",
+        "currency_code": "EUR"
+      },
+      {
+        "good_id": 42,
+        "item_name": "Cinema ticket, 1 Seat",
+        "category_id": 8,
+        "category_name": "Sports And Leisure",
+        "min": 7.22,
+        "avg": 8.25,
+        "max": 9.29,
+        "usd": {
+          "min": "7.49",
+          "avg": "8.56",
+          "max": "9.64"
+        },
+        "measure": "money",
+        "currency_code": "EUR"
+      },
+      {
+        "good_id": 43,
+        "item_name": "Fitness Club, Monthly Fee for 1 Adult",
+        "category_id": 8,
+        "category_name": "Sports And Leisure",
+        "min": 20.64,
+        "avg": 28.97,
+        "max": 51.59,
+        "usd": {
+          "min": "21.41",
+          "avg": "30.05",
+          "max": "53.51"
+        },
+        "measure": "money",
+        "currency_code": "EUR"
+      },
+      {
+        "good_id": 44,
+        "item_name": "Tennis Court Rent, 1 Hour on Weekend",
+        "category_id": 8,
+        "category_name": "Sports And Leisure",
+        "min": 10.32,
+        "avg": 14.93,
+        "max": 20.64,
+        "usd": {
+          "min": "10.70",
+          "avg": "15.49",
+          "max": "21.41"
+        },
+        "measure": "money",
+        "currency_code": "EUR"
+      },
+      {
+        "good_id": 45,
+        "item_name": "Gasoline, 1 liter",
+        "category_id": 9,
+        "category_name": "Transportation",
+        "min": 1.13,
+        "avg": 1.29,
+        "max": 1.45,
+        "usd": {
+          "min": "1.17",
+          "avg": "1.34",
+          "max": "1.50"
+        },
+        "measure": "money",
+        "currency_code": "EUR"
+      },
+      {
+        "good_id": 46,
+        "item_name": "Monthly Pass, Regular Price",
+        "category_id": 9,
+        "category_name": "Transportation",
+        "min": 27.76,
+        "avg": 27.86,
+        "max": 30.96,
+        "usd": {
+          "min": "28.79",
+          "avg": "28.90",
+          "max": "32.11"
+        },
+        "measure": "money",
+        "currency_code": "EUR"
+      },
+      {
+        "good_id": 47,
+        "item_name": "One-way Ticket, Local Transport",
+        "category_id": 9,
+        "category_name": "Transportation",
+        "min": 0.72,
+        "avg": 0.93,
+        "max": 1.14,
+        "usd": {
+          "min": "0.75",
+          "avg": "0.96",
+          "max": "1.18"
+        },
+        "measure": "money",
+        "currency_code": "EUR"
+      },
+      {
+        "good_id": 48,
+        "item_name": "Taxi, price for 1 hour Waiting, Normal Tariff",
+        "category_id": 9,
+        "category_name": "Transportation",
+        "min": 10.32,
+        "avg": 15.48,
+        "max": 20.64,
+        "usd": {
+          "min": "10.70",
+          "avg": "16.06",
+          "max": "21.41"
+        },
+        "measure": "money",
+        "currency_code": "EUR"
+      },
+      {
+        "good_id": 49,
+        "item_name": "Taxi, price for 1 km, Normal Tariff",
+        "category_id": 9,
+        "category_name": "Transportation",
+        "min": 0.52,
+        "avg": 0.83,
+        "max": 1.24,
+        "usd": {
+          "min": "0.54",
+          "avg": "0.86",
+          "max": "1.29"
+        },
+        "measure": "money",
+        "currency_code": "EUR"
+      },
+      {
+        "good_id": 50,
+        "item_name": "Taxi Start, Normal Tariff",
+        "category_id": 9,
+        "category_name": "Transportation",
+        "min": 3.1,
+        "avg": 4.13,
+        "max": 5.16,
+        "usd": {
+          "min": "3.22",
+          "avg": "4.28",
+          "max": "5.35"
+        },
+        "measure": "money",
+        "currency_code": "EUR"
+      },
+      {
+        "good_id": 52,
+        "item_name": "Volkswagen Golf 1.4 90 KW Trendline (Or Equivalent New Car)",
+        "category_id": 9,
+        "category_name": "Transportation",
+        "min": 15478.96,
+        "avg": 17419,
+        "max": 19359.04,
+        "usd": {
+          "min": "16054.93",
+          "avg": "18067.16",
+          "max": "20079.39"
+        },
+        "measure": "money",
+        "currency_code": "EUR"
+      },
+      {
+        "good_id": 53,
+        "item_name": "Prepaid Mobile Tariff Local, price per 1 min, No Discounts or Plans",
+        "category_id": 10,
+        "category_name": "Utilities Per Month",
+        "min": 0.04,
+        "avg": 0.09,
+        "max": 0.14,
+        "usd": {
+          "min": "0.04",
+          "avg": "0.09",
+          "max": "0.15"
+        },
+        "measure": "money",
+        "currency_code": "EUR"
+      },
+      {
+        "good_id": 54,
+        "item_name": "Basic utilities for 85 square meter Apartment including Electricity, Heating or Cooling, Water and Garbage",
+        "category_id": 10,
+        "category_name": "Utilities Per Month",
+        "min": 134.16,
+        "avg": 190.71,
+        "max": 285.07,
+        "usd": {
+          "min": "139.15",
+          "avg": "197.81",
+          "max": "295.68"
+        },
+        "measure": "money",
+        "currency_code": "EUR"
+      },
+      {
+        "good_id": 55,
+        "item_name": "Internet, 60 Mbps or More, Unlimited Data, Cable/ADSL",
+        "category_id": 10,
+        "category_name": "Utilities Per Month",
+        "min": 10.32,
+        "avg": 15.58,
+        "max": 21.67,
+        "usd": {
+          "min": "10.70",
+          "avg": "16.16",
+          "max": "22.48"
+        },
+        "measure": "money",
+        "currency_code": "EUR"
+      },
+      {
+        "good_id": 58,
+        "item_name": "Water, 0.33 liter Bottle",
+        "category_id": 4,
+        "category_name": "Markets",
+        "min": 1.03,
+        "avg": 1.37,
+        "max": 2.07,
+        "usd": {
+          "min": "1.07",
+          "avg": "1.42",
+          "max": "2.15"
+        },
+        "measure": "money",
+        "currency_code": "EUR"
+      },
+      {
+        "good_id": 64,
+        "item_name": "Summer Dress in a Chain Store Like George, H&M, Zara, etc.",
+        "category_id": 3,
+        "category_name": "Clothing And Shoes",
+        "min": 10.32,
+        "avg": 27.96,
+        "max": 51.59,
+        "usd": {
+          "min": "10.70",
+          "avg": "29.00",
+          "max": "53.51"
+        },
+        "measure": "money",
+        "currency_code": "EUR"
+      },
+      {
+        "good_id": 65,
+        "item_name": "Mortgage Interest Rate in Percentages for 20 Years Fixed-Rate, Yearly, Fixed-Rate",
+        "category_id": 7,
+        "category_name": "Salaries And Financing",
+        "min": 1.29,
+        "avg": 1.43,
+        "max": 1.57,
+        "measure": "percent"
+      },
+      {
+        "good_id": 68,
+        "item_name": "Imported Beer, 0.33 liter Bottle",
+        "category_id": 4,
+        "category_name": "Markets",
+        "min": 0.62,
+        "avg": 1.46,
+        "max": 2.3,
+        "usd": {
+          "min": "0.64",
+          "avg": "1.51",
+          "max": "2.39"
+        },
+        "measure": "money",
+        "currency_code": "EUR"
+      }
+    ],
+    "error": null
+  }

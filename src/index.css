@@ -25,11 +25,12 @@
 
   about-section {
     background: rgba(32, 33, 36, 0.1);
-    position: relative;
+    position: center;
 }
 
 .blockabout {
-    padding: 20px;
+    padding: 50px;
+    position: center;
     background: white;
 }
 
@@ -67,6 +68,100 @@
   /*Country search-box*/
   input[type="text"] {
     margin-right: 30px;
+  }
+  
+  /*Country Facts Search button*/
+  .search-input{
+    width: max-content;
+    display: flex;
+    padding-top: 50px;
+    flex-direction: row;
+    position: center;
+    right: 50%;
+    left: 50%;
+  }
+  
+  .country-box {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    background-image: url(./components/Images/Maldives.jpg); /* Replace with your transparent background image */
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .form-control {
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px;
+  }
+
+  main {
+    padding-left: 240px;
+  }
+  
+  .card.map-card .living-coral {
+    background-color: #fa7268;
+  }
+  
+  .card.map-card .living-coral-text {
+    color: #fa7268;
+  }
+  
+  .card.map-card .table th {
+    width: 2rem;
+  }
+  
+  .card.map-card .pt-3-5 {
+    padding-top: 1.25rem;
+  }
+  
+  .card.map-card .card-body {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    top: 20%;
+    overflow: hidden;
+    background-color: transparent;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    -webkit-border-radius: 0 !important;
+    border-radius: 0 !important;
+  }
+  
+  .card.map-card .card-body.closed {
+    top: 100%;
+    height: 7.5rem;
+    margin-top: -7.5rem;
+  }
+  
+  .card.map-card .map-container {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+  }
+  
+  .card.map-card .map-container iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+  
+  .card.map-card .button .btn-floating {
+    margin-top: -1.5rem;
+  }
+  
+  blockquote {
+    margin-bottom: 0px !important;
   }
   
 /*LearnMore box */

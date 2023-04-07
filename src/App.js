@@ -8,6 +8,7 @@ import LearnMore from "./components/LearnMore/LearnMore"
 import "./index.css";
 import Country from "./components/Country/Country";
 import About from "./components/AboutUs/about";
+import Map from "./components/Map/Map";
 
 export default function App() {
   
@@ -21,6 +22,7 @@ export default function App() {
           <Route path="/learnmore" element={<LearnMore/>}/>
           <Route path="/contact" element={<Contact/>}/>
           <Route path="/about" element={<About/>}/>
+          <Route path="/map" element = {<Map/>}/>
         </Routes>
     </Router> 
      <Footer/> 
