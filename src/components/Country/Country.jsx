@@ -35,13 +35,7 @@ export default function Country () {
       console.log("country facts found: ", countryFacts, "capital", city);
       
       setCapital(countryFacts);
-      // if (countryFacts) {
-      //   const countryInfo = `Country: ${countryFacts.country}\nCapital: ${countryFacts.capital}\nAlternate Spellings: ${countryFacts.altSpellings.join(', ')}\nRegion: ${countryFacts.region}\nPopulation: ${countryFacts.population}\nFlag: ${countryFacts.flag}`;
-      //   //alert(countryInfo);
-      // } else {
-      //   alert('Country facts not found for the selected city.');
-      // }
-    } catch (error) {
+          } catch (error) {
       console.error('Error:', error);
     }
   };
@@ -79,12 +73,12 @@ export default function Country () {
       await fetch(`https://cost-of-living-and-prices.p.rapidapi.com/prices?city_name=${city}&country_name=${country}`, options)
      .then(response => {
       return response.json()
-    })
+     })
     .then(data => {
       setCost2(data);
-    })
+     })
     .catch(err => console.error(err));
-  }
+    }
     console.log(cost1);
 
     const getCities = async () => {
@@ -121,43 +115,7 @@ export default function Country () {
     // This is the user-interface that the user will interact with. 
       return ( 
            <> 
-        <div className="container my-4 mx-auto width-75 p-4 rounded" style={{backgroundColor: "white"}}>
-         <h2>Cost of Living Comparison</h2> 
-          {/* This action happens when the form is submitted.
-           When the user enters info in the input field and clicks the Compare button, the 'handleSubmit function is called.*/}
-         <form onSubmit={handleSubmit} > 
-         <div className="row mb-3">
-         <div class="col-md 6"> 
-        <input list="cities" type="text" className="form-control border-dark" placeholder="Search City 1" id="city1" onChange={handleCity1Change}></input>
-         </div>
-          <div class="col-md 6"> 
-          <input list="cities" type="text" className="form-control border-dark" placeholder="Search City 2" id="city2" onChange={handleCity2Change}></input>
-          </div>
-          </div>
-         <button type="submit" class="btn btn-outline-search">Search</button>  
-         </form>
-       <table>
-       <tr>
-        <th>Item name</th>
-        <th>Price 1</th>
-        <th>Price 2</th>
-      </tr>
-       {cost1.prices && cost1.prices.map((item, index) => {
-       return <tr key={index}>
-        <td>{item.item_name}</td>
-        <td>{item?.usd?.avg}</td>
-        <td>{cost2?.prices?.filter(c2 => c2.item_name === item.item_name)[0]?.usd?.avg}</td>
-      </tr>
-    })}
-     </table>
-
-       <datalist id="cities">
-        {countries && countries.map((country, index) => {
-            return (<option key={index} value={country.capital[0]+'-'+country.name.common}/>);
-        })}
-      </datalist>
-       </div> 
-        
+              
            <div class="country-box">
           <h2 class="text-center">Excited for some World Knowledge?!! Search Below.</h2>
           < form onSubmit = {handleSearchButtonClick}> 
@@ -195,6 +153,44 @@ export default function Country () {
                </ul>
              ) : null}
             </div> 
+
+            <div className="container my-4 mx-auto width-75 p-4 rounded" style={{backgroundColor: "white"}}>
+         <h2>Cost of Living Comparison</h2> 
+          {/* This action happens when the form is submitted.
+           When the user enters info in the input field and clicks the Compare button, the 'handleSubmit function is called.*/}
+         <form onSubmit={handleSubmit} > 
+         <div className="row mb-3">
+         <div class="col-md 6"> 
+         <input list="cities" type="text" className="form-control border-dark" placeholder="Search City 1" id="city1" onChange={handleCity1Change}></input>
+         </div>
+          <div class="col-md 6"> 
+          <input list="cities" type="text" className="form-control border-dark" placeholder="Search City 2" id="city2" onChange={handleCity2Change}></input>
+          </div>
+          </div>
+         <button type="submit" class="btn btn-outline-search">Search</button>  
+         </form>
+        <table>
+        <tr>
+        <th>Item name</th>
+        <th>Price 1</th>
+        <th>Price 2</th>
+       </tr>
+       {cost1.prices && cost1.prices.map((item, index) => {
+       return <tr key={index}>
+        <td>{item.item_name}</td>
+        <td>{item?.usd?.avg}</td>
+        <td>{cost2?.prices?.filter(c2 => c2.item_name === item.item_name)[0]?.usd?.avg}</td>
+      </tr>
+     })}
+     </table>
+
+       <datalist id="cities">
+        {countries && countries.map((country, index) => {
+            return (<option key={index} value={country.capital[0]+'-'+country.name.common}/>);
+        })}
+       </datalist>
+       </div> 
+  
               </div>
               </div>
             </>
@@ -202,28 +198,4 @@ export default function Country () {
  
          }
                
-      {/* {capital ?<p>{JSON.stringify(capital)}</p> : null}  */} 
-        {/* {capital ? (
-         <ul>
-         {Object.entries(capital).map(([key, value]) => (
-        <li key={key}>
-          <strong>{key}: </strong>
-          {typeof value === 'object' ? (
-            <ul>
-              {Object.entries(value).map(([nestedKey, nestedValue]) => (
-                <li key={nestedKey}>
-                  <strong>{nestedKey}: </strong>
-                  {nestedValue}
-                </li>
-              ))}
-            </ul>
-          ) : (
-            value
-          )}
-        </li>
-      ))}
-    </ul>
-  ) : null}
-</div> */}
-
-           
+  

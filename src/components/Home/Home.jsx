@@ -1,5 +1,5 @@
 import LearnMore from "../LearnMore/LearnMore";
-import AboutUs from "../AboutUs/about";
+import AboutUs from "../AboutUs/AboutUs";
 import Netherlands from "../Images/Netherlands.jpg";
 
 export default function Home () {

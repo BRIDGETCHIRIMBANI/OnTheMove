@@ -7,7 +7,7 @@ import Home from "./components/Home/Home";
 import Contact from "./components/Contacts/Contact";
 import LearnMore from "./components/LearnMore/LearnMore"
 import Country from "./components/Country/Country";
-import About from "./components/AboutUs/about";
+import AboutUs from "./components/AboutUs/AboutUs";
 import Map from "./components/Map/Map";
 
 
@@ -22,7 +22,7 @@ export default function App() {
          <Route path="/country" element={<Country/>}/>
           <Route path="/learnmore" element={<LearnMore/>}/>
           <Route path="/contact" element={<Contact/>}/>
-          <Route path="/about" element={<About/>}/>
+          <Route path="/AboutUs" element={<AboutUs/>}/>
           <Route path="/map" element = {<Map/>}/>
         </Routes>
     </Router> 
